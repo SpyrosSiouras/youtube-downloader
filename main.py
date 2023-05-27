@@ -5,6 +5,7 @@
 """
 
 import flet as ft
+from flet import ScrollMode
 
 class TasksApp(ft.UserControl):
     
@@ -74,12 +75,13 @@ class Task(ft.UserControl):
 def main(page: ft.page):
     page.title="Tasking App By PythonDude"
     page.window_width=500
-    page.window_height=700
+    page.window_height=200
     page.bgcolor ="BLUE"
     
-    # taskingApp =TasksApp()
-    # page.add(taskingApp)
- 
+    taskingApp =TasksApp()
+    page.add(taskingApp)
+    page.scroll = "always"
+    page.update()
     
  
  

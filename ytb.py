@@ -13,7 +13,7 @@ def get_query_results(query: str) -> list[YouTube]:
 
 if __name__ == "__main__":
 
-    query_results = get_query_results("")
+    query_results = get_query_results("Sido Astronaut")
     print(len(query_results))
     for result in query_results:
         print(result.thumbnail_url)
